@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#card{
+  background-color: #ccf;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
+  height: 50vh;
+}
+
+#buttons{
+  background-color: gray;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
+  height: 10vh;
+}
+#quote{
+  background-color: #789;
+  padding: 5%;
+  font-size: 150%;
+}
+#name{
+  background-color: #7d8;
+  padding: 5%;
+  float: right;
+}
+button{
+  width: 50%;
+  height: 10vh;
+}
