@@ -1,30 +1,235 @@
-//*************OUR DATA****************************
+//*************QUOTE DATA****************************
 var quotes = [
   {
-    name:"Dr. Suess",
-    quote:'"Don\'t cry because it\'s over, smile because it happened."'
+    gif: "http://38.media.tumblr.com/668d6f6f70f15a6686554631aa41f561/tumblr_mvw7g6U2Aa1qhry52o1_r1_500.gif",
+    character: "Timon",
+    movie: "The Lion King"
   },
   {
-    name:"Marilyn Monroe",
-    quote:'"I\'m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can\'t handle me at my worst, then you sure as hell don\'t deserve me at my best."'
+    gif: "https://s-media-cache-ak0.pinimg.com/originals/80/35/76/80357634da6fe02e6035439dda45c63c.gif",
+    character: "Simba",
+    movie: "The Lion King"
   },
   {
-    name:"Oscar Wilde",
-    quote:'"Be yourself; everyone else is already taken."'
+    gif: "https://media.tenor.co/images/777734aff9ac21a7ea0c69f6ec56c5c1/tenor.gif",
+    character: "Scar",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://s-media-cache-ak0.pinimg.com/originals/1c/e4/c9/1ce4c9f05fbf61f745ebc793c832cccf.jpg",
+    character: "Timon",
+    movie: "The Lion King"
+  },
+  {
+    gif: "http://media.rbl.ms/image?u=%2Fwp-content%2Fuploads%2F2014%2F06%2F25%2F4970_0e65.gif&ho=http%3A%2F%2Fcdn.hellogiggles.com&s=403&h=bc8b4d4a78b5ad6a229d577c7859d77c713282b9fc1e8470ad6f2c72ef7f4376&size=980x&c=2597183761",
+    character: "Scar",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://media.giphy.com/media/t9q8XTQVFhtpm/giphy.gif",
+    character: "Scar",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://68.media.tumblr.com/tumblr_m6hwz3KTsU1rrd8xxo1_500.gif",
+    character: "Rafiki and Simba",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://media.giphy.com/media/foiPkNyFdskbS/giphy.gif",
+    character: "Timon",
+    movie: "The Lion King"
+  },
+  {
+    gif: "http://38.media.tumblr.com/9311ec99d354a6d042a7f7e2a9a43611/tumblr_mqyvxqVKxJ1sx9ttio5_250.gif",
+    character: "Timon",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://s-media-cache-ak0.pinimg.com/originals/38/58/99/38589991646ef9b785f3325ff854d5ce.gif",
+    character: "Scar",
+    movie: "The Lion King"
+  },
+  {
+    gif: "http://24.media.tumblr.com/fb9f3983b0f9a1fa13c7a089a2090780/tumblr_n1tg0aUvaq1trg912o1_500.gif",
+    character: "Rafiki",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://68.media.tumblr.com/5a706cbfe2a05e59a325efc92463fe7b/tumblr_ojarrcqw761s3olk1o1_500.gif",
+    character: "Banzai and Shenzi",
+    movie: "The Lion King"
+  },
+  {
+    gif: "https://ladygeekgirl.files.wordpress.com/2015/02/ultimate-cosmic-powers.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://68.media.tumblr.com/927660375d33cdbc45e6029b9070f261/tumblr_o1ihyzRiC11s2wio8o1_500.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://media.tenor.com/images/86e14049433ca40f97897b3bcd8a4e49/tenor.gif",
+    character: "Aladdin",
+    movie: "... well... Aladdin"
+  },
+  {
+    gif: "http://24.media.tumblr.com/10c2e9d4229408f19f1181a84b6f9fbe/tumblr_mjs2akJWMn1rjl16lo2_250.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://media.giphy.com/media/6PXtFHNQjK240/giphy.gif",
+    character: "Jasmine",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://33.media.tumblr.com/5e394ceacbbef2d5cd06c2662066c7e3/tumblr_n1hsxdMALa1qhcorfo1_400.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://24.media.tumblr.com/tumblr_m46kkwPdHh1r457i2o6_r2_250.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://25.media.tumblr.com/tumblr_m46kkwPdHh1r457i2o12_r1_250.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://24.media.tumblr.com/tumblr_m46kkwPdHh1r457i2o2_r1_250.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://68.media.tumblr.com/74dd88f943ccef2972e4474789d2982b/tumblr_nvmhvsTV9n1uhr8t5o1_500.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://media.giphy.com/media/YlzKtmIHP3aWk/giphy.gif",
+    character: "Genie",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://68.media.tumblr.com/48edd16be5708b28fbc9671d02381641/tumblr_inline_nkr95pCp6F1sb080b.gif",
+    character: "Iago",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://68.media.tumblr.com/ac207cb921c17b92b1d6918994838841/tumblr_inline_ne6llsHWWB1s4sxxd.gif",
+    character: "Iago",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://68.media.tumblr.com/e735f207b0fe05dc1471886562b3ddf0/tumblr_o29ibmovpl1s2wio8o1_500.gif",
+    character: "Iago and Jafar",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://68.media.tumblr.com/cb559e1fd022342b9b80a6c59c0c6315/tumblr_mtiereQ7QU1sx9ttio7_500.gif",
+    character: "Iago",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://68.media.tumblr.com/a52f88b26c3a4cdb2a2e99367d9e056a/tumblr_nkrq75jzap1snsjmyo1_500.gif",
+    character: "Jafar",
+    movie: "Aladdin"
+  },
+  {
+    gif: "https://media.giphy.com/media/T7p9Wlpt6RfRm/giphy.gif",
+    character: "The Sultan",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://media.tumblr.com/tumblr_mbelayjLNq1rrpsd7.gif",
+    character: "Jafar",
+    movie: "Aladdin"
+  },
+  {
+    gif: "http://31.media.tumblr.com/fd4495e7b608a35e76cdb0491ff78359/tumblr_n2ws28UNWQ1rsrbdko9_500.gif",
+    character: "Packard",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "https://media.tenor.co/images/16fcf0eb177c4d3a665344bac4424251/tenor.gif",
+    character: "Vinny",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://images6.fanpop.com/image/photos/36100000/Disney-image-disney-36164019-500-220.gif",
+    character: "Sweet",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://i.imgur.com/dcB1lsH.gif",
+    character: "Cookie",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "https://s-media-cache-ak0.pinimg.com/originals/df/90/67/df90677598173fc0f4bc890541d29828.gif",
+    character: "Helga"
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://images6.fanpop.com/image/photos/33600000/Milo-and-Mrs-Packard-atlantis-the-lost-empire-33607411-500-175.gif",
+    character: "Milo",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://media.tumblr.com/32d346a132892e0fef73e86078dcd926/tumblr_inline_mwxv4dteFA1r4wnam.gif",
+    character: "Vinny",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://37.media.tumblr.com/7c3bffd09814d140b0a8efa555f8bd7d/tumblr_n2ws28UNWQ1rsrbdko8_500.gif",
+    character: "Mole and Packard",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://www.moviefancentral.com/images/pictures/review62285/tumblr_llz7y83dZo1qi4ns0o1_500.gif?1363017287",
+    character: "Vinny",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "http://i.imgur.com/A035U1V.gif",
+    character: "Sweet",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "https://media.giphy.com/media/reYapRpmTBh60/giphy.gif",
+    character: "Kida and Milo",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "https://media.tenor.com/images/21cf22d80b936e9d488d2c1d17a279e0/tenor.gif",
+    character: "Helga",
+    movie: "Atlantis: The Lost Empire"
+  },
+  {
+    gif: "https://media.giphy.com/media/DXyGRq3t57Dhe/giphy.gif",
+    character: "Cookie",
+    movie: "Atlantis: The Lost Empire"
   }
 ];
-//*******************************
+//***************************************************
 
 function refresh(){
   var index = Math.floor(Math.random() * quotes.length);
-  $("#quote").html(quotes[index].quote);
-  $("#name").html("- " + quotes[index].name); 
-  console.log();
+  $("#gif").attr("src", quotes[index].gif);
+  $("#character").html(quotes[index].character);
+  $("#movie").html("from " + quotes[index].movie); 
+  console.log(quotes[index].movie);
 }
 
 refresh(); //A random quote to start with
 
 $("#refresh").click(refresh); //Our event handler
 
-var link = "http://twitter.com/intent/tweet?text=" + $("#quote").html() + " " +  $("#name").html();
+var link = "http://twitter.com/intent/tweet?text=" + $("#gif").attr("src");
 $("#twitter").attr("href", link);
+
