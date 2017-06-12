@@ -172,7 +172,7 @@ var quotes = [
   },
   {
     gif: "https://s-media-cache-ak0.pinimg.com/originals/df/90/67/df90677598173fc0f4bc890541d29828.gif",
-    character: "Helga"
+    character: "Helga",
     movie: "Atlantis: The Lost Empire"
   },
   {
@@ -217,7 +217,6 @@ var quotes = [
   }
 ];
 //***************************************************
-
 function refresh(){
   var index = Math.floor(Math.random() * quotes.length);
   $("#gif").attr("src", quotes[index].gif);
@@ -226,7 +225,8 @@ function refresh(){
   console.log(quotes[index].movie);
 }
 
-refresh(); //A random quote to start with
+
+refresh();//A random quote to start with
 
 $("#refresh").click(refresh); //Our event handler
 
